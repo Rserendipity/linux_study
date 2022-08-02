@@ -1,0 +1,6 @@
+shutdown -h now		现在关机
+shutdown -h 1		一分钟后关机
+shutdown -r now		现在重启
+halt				现在关机
+reboot				现在重启
+sync				保存内存的数据到硬盘

@@ -1,0 +1,12 @@
+0		关机
+1		单用户
+2		多用户,无网络
+3		多用户,有网络  		(常用)
+4		系统未使用的保留
+5		图形界面			(常用)
+
+init [数字]						指定[数字]运行级别
+systemctl get-default			获取当前的运行级别
+systemctl set-default [参数]	设置默认运行级别
+[参数] -->  multi-user.target	3级别
+	   -->	grapthcal.target	5级别
