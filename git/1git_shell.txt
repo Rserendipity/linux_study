@@ -1,1 +1,13 @@
-git     
+1. 设置用户名和邮箱
+git config --global user.name "your name"
+git config --global user.email "your email"
+
+2. 提交，拉取的步骤
+
+本地到云端
+git add   ->   git commit  ->   git push
+
+云端到本地
+git pull  ->   git reset   ->   git checkout 
+
+
