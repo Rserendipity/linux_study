@@ -1,0 +1,13 @@
+OBJ=main.o Add.o
+TARGET=main
+
+${TARGET}: ${OBJ}
+	gcc ${OBJ} -o ${TARGET}
+
+Add.o: Add.c
+	gcc -c Add.c
+main.o: main.c
+	gcc -c main.c
+
+clean:
+	rm -f *.o main
