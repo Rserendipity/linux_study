@@ -1,3 +1,4 @@
+.PHONY: clean
 
 OBJ    = Add.o Sub.o main.o
 TARGET = main
