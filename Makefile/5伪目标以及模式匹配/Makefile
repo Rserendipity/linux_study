@@ -5,7 +5,7 @@ TARGET = main
 
 $(TARGET):$(OBJ)
 	$(CXX) $(OBJ) -o $(TARGET)
- 
+
 %.o:%.c
 	$(CXX) -c $^ -o $@
 
