@@ -1,7 +1,7 @@
 .PHONY: clean
 
 ALLFILE= $(wildcard *.c)
-OBJ    = $(patsubst %.c,%.o, $(ALLFILE))
+OBJ    = $(patsubst %.c,%.o, $(notdir $(ALLFILE)))
 TARGET = main
 
 $(TARGET):$(OBJ)
@@ -12,6 +12,3 @@ $(TARGET):$(OBJ)
 
 clean:
 	$(RM) $(TARGET) *.o
-
-print: 
-	echo $(patsubst %.c,%.o, $(ALLFILE))
