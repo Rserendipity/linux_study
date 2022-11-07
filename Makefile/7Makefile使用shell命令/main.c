@@ -1,9 +1,8 @@
 #include <stdio.h>
 int main()
 {
-    printf("sum = %d\n", 1);
-    printf("sum = %d\n", 1);
-    printf("sum = %d\n", 1);
+    char *ps = NULL;
+    // *ps = 123;
 
     return 0;
 }
